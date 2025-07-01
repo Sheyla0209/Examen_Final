@@ -1,0 +1,139 @@
+/* Establece un modelo de caja uniforme para todos los elementos, eliminando margenes y rellenos predeterminados */
+* {
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
+    margin: 0; /* Elimina los margenes predeterminados */
+    padding: 0; /* Elimina los rellenos predeterminados */
+}
+
+/* Define los estilos basicos para el cuerpo de la pagina */
+body {
+    font-family: 'Open Sans', sans-serif; /* Establece la fuente principal y una alternativa sans-serif */
+    color: #333; /* Define el color del texto principal como gris oscuro */
+    line-height: 1.6; /* Establece el espaciado entre lineas para mejorar la legibilidad */
+    background-color: #e8f8f5; /* Define un fondo esmeralda claro para toda la pagina */
+}
+
+/* Estilos compartidos para el encabezado y el pie de pagina */
+.header, .footer {
+    background-color: #7fb3d5; /* Fondo celeste claro para el encabezado y pie de pagina */
+    color: #e8f8f5; /* Texto en color muy claro, casi blanco */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 1rem 0; /* Aniade espacio vertical dentro del encabezado y pie de pagina */
+}
+
+/* Estilos para la navegacion principal */
+.main-nav {
+    background-color: white; /* Fondo blanco para la barra de navegacion */
+    color: black; /* Texto en color negro */
+    text-align: center; /* Centra los elementos de navegacion */
+    padding: 0.5rem 0; /* Aniade un poco de espacio vertical dentro de la barra de navegacion */
+}
+
+/* Elimina los puntos de lista en la navegacion */
+.main-nav ul {
+    list-style-type: none; /* Quita los marcadores de lista */
+}
+
+
+/* Estilos para los enlaces de navegacion */
+.main-nav ul li a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    font-weight: 600; /* Hace el texto del enlace un poco mas grueso */
+    padding: 15px 20px; /* Aniade espacio alrededor del texto del enlace */
+    display: inline-block; /* Permite que el padding se aplique correctamente */
+    transition: background-color 0.3s, color 0.3s; /* Suaviza la transicion de colores al pasar el mouse */
+}
+
+
+/* Estructura de la seccion principal usando CSS Grid */
+.main-section {
+    display: grid; /* Usa CSS Grid para el disenio */
+    grid-template-columns: 2fr 1fr; /* Divide en dos columnas: una mas ancha y otra mas estrecha */
+    grid-gap: 20px; /* Aniade espacio entre las columnas */
+    padding: 20px; /* Aniade espacio alrededor de toda la seccion principal */
+}
+
+/* Estilos compartidos para el articulo principal (main-article) y la barra lateral (sidebar) */
+.main-article, .sidebar {
+    background-color: white; /* Fondo blanco para estas secciones */
+    padding: 1rem; /* Aniade espacio interno */
+}
+
+/* Estilos responsivos para pantallas mas pequenias */
+@media (max-width: 768px) {
+    .main-section {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequenias */
+    }
+    .main-nav ul li {
+        display: block; /* Apila verticalmente los elementos de navegacion */
+        margin: 0; /* Elimina el margen entre elementos de navegacion */
+    }
+}
+
+/* Contenedor general centrado */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para el bloque de entrada de datos */
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.inputs label,
+.inputs input,
+.inputs button {
+    font-size: 1rem;
+}
+.inputs input {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.inputs button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.inputs button:hover {
+    background-color: #2874a6;
+}
+
+/* Canvas centrado */
+#canvasTriangulo {
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para los resultados */
+.resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+
+

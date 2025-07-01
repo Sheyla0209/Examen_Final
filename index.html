@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Calculadora Integral de Triángulos</title>
+        <link rel="stylesheet" href="style.css">
+		<link href="./CSS/dw.css" rel="stylesheet" />
+    </head>
+<body>
+
+ <div class="container">
+  <!-- Aquí va la calculadora -->
+    <!-- Cabecera de la página -->
+    <header class="header">
+	
+        <h1>Calculadora Integral de Triángulos</h1>
+    </header>
+    
+    <!-- Menu de navegación -->
+    <nav class="main-nav">
+        <h4> An&Aacute;lisis completo de un tri&Aacute;ngulo a partir de sus 3 lados </h4>
+    </nav>
+	
+    <div class="container">
+    <!-- Bloque de contenido -->
+    <section class="main-section">
+        <!-- Contenido Principal -->
+        <article class="main-article">
+		
+		 <section class="inputs">
+		 <h1> Ingrese las medidas de los lados </h1>
+		<div class="container">
+      <label for="ladoA">Lado a:</label>
+      <input type="number" id="ladoA" />
+      <label for="ladoB">Lado b:</label>
+      <input type="number" id="ladoB" />
+      <label for="ladoC">Lado c:</label>
+      <input type="number" id="ladoC" />
+      <button id="calcularBtn">Calcular</button>
+    </section>
+
+    
+
+    <section class="resultados">
+      <div class="card">
+        <h3>&Aacute;ngulos</h3>
+        <p>&Aacute;ngulo α (a): <span id="anguloA">-</span>°</p>
+        <p>&Aacute;ngulo β (b): <span id="anguloB">-</span>°</p>
+        <p>&Aacute;ngulo γ (c): <span id="anguloC">-</span>°</p>
+      </div>
+
+      <div class="card">
+        <h3>Medianas</h3>
+        <p>Mediana ma: <span id="ma">-</span></p>
+        <p>Mediana mb: <span id="mb">-</span></p>
+        <p>Mediana mc: <span id="mc">-</span></p>
+      </div>
+
+      <div class="card">
+        <h3>Bisectrices</h3>
+        <p>Bisectrices ta: <span id="ta">-</span></p>
+        <p>Bisectrices tb: <span id="tb">-</span></p>
+        <p>Bisectrices tc: <span id="tc">-</span></p>
+      </div>
+
+      <div class="card">
+        <h3>Alturas</h3>
+        <p>Alturas ha: <span id="ha">-</span></p>
+        <p>Alturas hb: <span id="hb">-</span></p>
+        <p>Alturas hc: <span id="hc">-</span></p>
+      </div>
+
+      <div class="card">
+        <h3>Per&iacute;metro y &Aacute;rea</h3>
+        <p>Per&iacute;metro: <span id="perimetro">-</span></p>
+        <p>&Aacute;rea: <span id="area">-</span></p>
+      </div>
+    </section>
+    </div>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <h4>SENCICO 2025&copy;<h4>
+
+ <script src="./JS/dw.js"></script>
+</body> 
+</html> 
